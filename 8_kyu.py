@@ -13,6 +13,9 @@ def filter_list(gived_list):
             return_list.append(i)
     return return_list
 
+# the same as up with list comprehension
 
+def filter_list_2(l):
+    return [i for i in l if not isinstance(i, str)]
 
 
