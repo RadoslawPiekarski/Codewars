@@ -32,6 +32,7 @@ def likes(names):
     else:
         return f"{names[0]}, {names[1]} and {len(names) - 2} others like this"
 
+
 # print(likes(["Alex", "Jacob", "Mark", "Max"]))
 
 # def likes(names):
@@ -44,3 +45,22 @@ def likes(names):
 #         4: '{}, {} and {others} others like this'
 #     }[min(4, n)].format(*names[:3], others=n-2)
 
+def greet(name):
+    return f"Hello, {name} how are you doing today?"
+
+
+def disemvowel(input_string):
+    output_string = ""
+    vowels = "aeiouAEIOU"
+    for sign in input_string:
+        if sign not in vowels:
+            output_string += sign
+
+    return output_string
+
+
+# print(disemvowel("This website is for losers LOL!"))
+
+#the same but with translate
+def disemvowel2(s):
+    return s.translate(None, "aeiouAEIOU")
