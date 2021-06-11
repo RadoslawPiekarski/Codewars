@@ -61,6 +61,23 @@ def disemvowel(input_string):
 
 # print(disemvowel("This website is for losers LOL!"))
 
-#the same but with translate
-def disemvowel2(s):
+# the same but with translate
+def disemvowel_2(s):
     return s.translate(None, "aeiouAEIOU")
+
+
+def kaprekar_split(n):
+    if n == 1:
+        return 0
+    n_square = n * n
+    str_n_square = str(n_square)
+    for i in range(1, len(str_n_square)):
+        left_digit = int(str_n_square[:i])
+        right_digit = int(str_n_square[i:])
+        digit_sum = left_digit + right_digit
+        if n == digit_sum:
+            return i
+    return -1
+
+
+print(kaprekar_split(45))
