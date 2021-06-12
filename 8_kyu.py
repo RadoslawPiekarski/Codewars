@@ -80,4 +80,21 @@ def kaprekar_split(n):
     return -1
 
 
-print(kaprekar_split(45))
+# print(kaprekar_split(45))
+
+class Song:
+    def __init__(self, title, artist):
+        self.title = title
+        self.artist = artist
+        self.listened_by = set()  # set will delete duplicates
+
+    def how_many(self, listened_today):
+        listened_today = set([x.lower() for x in listened_today])  # lowercase elements
+        new_listeners = len([i for i in listened_today if i not in self.listened_by])
+        self.listened_by.update(listened_today)
+        return new_listeners
+
+
+mount_moose = Song('Mount Moose', 'The Snazzy Moose')
+print(mount_moose.how_many(['John', 'Fred', 'BOb', 'carl', 'RyAn']))
+print(mount_moose.how_many(['JoHn', 'Luke', 'AmAndA']))
