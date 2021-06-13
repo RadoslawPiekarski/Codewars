@@ -95,6 +95,14 @@ class Song:
         return new_listeners
 
 
-mount_moose = Song('Mount Moose', 'The Snazzy Moose')
-print(mount_moose.how_many(['John', 'Fred', 'BOb', 'carl', 'RyAn']))
-print(mount_moose.how_many(['JoHn', 'Luke', 'AmAndA']))
+# mount_moose = Song('Mount Moose', 'The Snazzy Moose')
+# print(mount_moose.how_many(['John', 'Fred', 'BOb', 'carl', 'RyAn']))
+# print(mount_moose.how_many(['JoHn', 'Luke', 'AmAndA']))
+
+
+def last_survivor(letters, coords):
+    for i in coords:
+        letters = letters[:i] + letters[i+1:]
+    return letters
+
+last_survivor('abc', [1, 1])
