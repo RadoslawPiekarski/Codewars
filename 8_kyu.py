@@ -102,7 +102,14 @@ class Song:
 
 def last_survivor(letters, coords):
     for i in coords:
-        letters = letters[:i] + letters[i+1:]
+        letters = letters[:i] + letters[i + 1:]
     return letters
 
-last_survivor('abc', [1, 1])
+
+# last_survivor('abc', [1, 1])
+
+def quarter_of(month):
+    return (month + 2) // 3
+
+
+quarter_of(3)
