@@ -112,4 +112,14 @@ def quarter_of(month):
     return (month + 2) // 3
 
 
-quarter_of(3)
+# quarter_of(3)
+
+def reverse_words(input_sentence):
+    output_sentence = input_sentence.split()
+    output_sentence.reverse()
+    return " ".join(output_sentence)
+
+# reverse_words("Please split this string")
+### Clever version:
+# def reverseWords(str):
+#     return " ".join(str.split(" ")[::-1])
