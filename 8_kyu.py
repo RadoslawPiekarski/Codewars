@@ -119,7 +119,17 @@ def reverse_words(input_sentence):
     output_sentence.reverse()
     return " ".join(output_sentence)
 
+
 # reverse_words("Please split this string")
 ### Clever version:
 # def reverseWords(str):
 #     return " ".join(str.split(" ")[::-1])
+
+def make_negative(number):
+    if number > 0:
+        return -number
+    else:
+        return number
+
+
+print(make_negative(5))
