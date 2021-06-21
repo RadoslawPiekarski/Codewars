@@ -121,7 +121,7 @@ def reverse_words(input_sentence):
 
 
 # reverse_words("Please split this string")
-### Clever version:
+# Clever version:
 # def reverseWords(str):
 #     return " ".join(str.split(" ")[::-1])
 
