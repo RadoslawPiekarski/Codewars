@@ -6,7 +6,7 @@ function silnia(givenNumber) {
     return returnNumber;
 }
 
-silnia(4);
+// silnia(4);
 
 function  dodajZakres(minNumber, maxNumber) {
     let returnNumber = 0;
@@ -16,4 +16,4 @@ function  dodajZakres(minNumber, maxNumber) {
     return returnNumber;
 }
 
-print(dodajZakres(7));
+// print(dodajZakres(7));
