@@ -17,3 +17,15 @@ function  dodajZakres(minNumber, maxNumber) {
 }
 
 // print(dodajZakres(7));
+
+
+function printString() {
+    console.log("Java Script rulez!")
+}
+
+function printString2() {
+    console.log("Wygenerowano setInterval")
+}
+
+setTimeout(printString(), 2000);
+setInterval(printString2(), 3000);
