@@ -133,3 +133,8 @@ def make_negative(number):
 
 
 print(make_negative(5))
+
+
+def over_the_road(address, n):
+    return n * 2 + 1 - address
+
