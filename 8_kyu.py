@@ -132,9 +132,16 @@ def make_negative(number):
         return number
 
 
-print(make_negative(5))
+# print(make_negative(5))
 
 
 def over_the_road(address, n):
     return n * 2 + 1 - address
 
+
+def close_compare(a, b, margin=0):
+    if abs(a - b) <= margin:
+        return 0
+    if a > b:
+        return 1
+    return -1
