@@ -54,3 +54,11 @@ let ptintTable = (inputArray)=> {
 }
 
 
+let multiply = (inputArray)=> {
+    let returnResult = 1;
+    inputArray.forEach((element)=> {
+        returnResult *= element
+    })
+    return returnResult
+}
+
