@@ -62,3 +62,12 @@ let multiply = (inputArray)=> {
     return returnResult
 }
 
+
+let getEvenAverage = (inputArray)=> {
+    let returnResult = inputArray.filter(element => element % 2 === 0)
+    console.log(returnResult)
+}
+
+getEvenAverage([1,2,3,4,5,6,7])
+
+// dokończyć zadanie ;)
