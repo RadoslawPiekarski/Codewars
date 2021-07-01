@@ -48,4 +48,9 @@ let distFromAverage = (input_table)=> {
 
 }
 
-distFromAverage()
+
+let ptintTable = (inputArray)=> {
+    inputArray.forEach((element)=>{console.log(element)})
+}
+
+
