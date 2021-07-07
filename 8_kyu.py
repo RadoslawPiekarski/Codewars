@@ -145,3 +145,16 @@ def close_compare(a, b, margin=0):
     if a > b:
         return 1
     return -1
+
+
+def count_letters(input_string):
+    counter = {}
+    for letter in input_string:
+        if letter not in counter:
+            counter[letter] = 0
+        counter[letter] += 1
+
+    print(counter)
+
+
+count_letters('Ala ma kota')
