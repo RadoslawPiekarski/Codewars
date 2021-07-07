@@ -158,3 +158,9 @@ def count_letters(input_string):
 
 
 count_letters('Ala ma kota')
+
+# from collections import Counter
+#
+# # Use a string as an argument
+# Counter("mississippi")
+# >> Counter({'i': 4, 's': 4, 'p': 2, 'm': 1})
