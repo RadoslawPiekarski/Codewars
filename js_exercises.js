@@ -140,3 +140,26 @@ const person = {
 
 
 // person.sayHello()
+
+
+const car = {
+    brand : "BMW",
+    color : "black",
+    numberOfKilometers : 0,
+    printCarinfo : function () {
+        console.log(`brand: ${this.brand} / color: ${this.color} / number of kilometers: ${this.numberOfKilometers}`)
+    },
+    drive : function(km){
+        this.numberOfKilometers += km
+    }
+}
+
+// car.drive(34);
+// car.printCarinfo();
+// car.check = [1998, 2001, 2012];
+// car.addCheck = function (year){ this.check.push(year)};
+// car.showCheck = function (){console.log(car.check)};
+// car.addCheck(2021)
+// car.showCheck()
+
+
