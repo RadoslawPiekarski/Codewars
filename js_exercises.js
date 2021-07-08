@@ -122,7 +122,7 @@ const country = {
 
 const timeMachine = {
     shape : "round",
-    moder : "T2000",
+    model : "T2000",
     run : function (date, place){
         console.log("Here we go!")
     }
@@ -130,3 +130,13 @@ const timeMachine = {
 
 // timeMachine.run(21, "Moscow");
 
+const person = {
+    name : "Janek",
+    age : 123,
+    sayHello : function () {
+        console.log(`Hello ${this.name}!`);
+    }
+}
+
+
+// person.sayHello()
