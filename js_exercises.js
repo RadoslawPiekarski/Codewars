@@ -74,10 +74,13 @@ let getEvenAverage = (inputArray)=> {
     });
 
     return sumNumber/oddNumbers.length;
-}
+};
 
 // console.log(getEvenAverage([2,8,3,7,4]))
 
+let sortArray = (inputArray)=>{
+    inputArray.sort((a,b)=>{return a-b})
+    console.log(inputArray)
+}
 
-
-// dokończyć zadanie ;)
+sortArray([13,5,2,3,10])
