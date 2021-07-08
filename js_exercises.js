@@ -118,4 +118,15 @@ const country = {
     ministers : [1,2,3]
 }
 
-console.log(country.capital)
+// console.log(country.capital)
+
+const timeMachine = {
+    shape : "round",
+    moder : "T2000",
+    run : function (date, place){
+        console.log("Here we go!")
+    }
+}
+
+// timeMachine.run(21, "Moscow");
+
