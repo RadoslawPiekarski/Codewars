@@ -177,7 +177,7 @@ function Basket(){
     }
 }
 
-const basket1 = new Basket();
-basket1.addProduct('truskawka',100);
-basket1.addProduct('banan', 400);
-basket1.showBasket()
+// const basket1 = new Basket();
+// basket1.addProduct('truskawka',100);
+// basket1.addProduct('banan', 400);
+// basket1.showBasket()
