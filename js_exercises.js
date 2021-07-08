@@ -110,3 +110,12 @@ let addArrays = (arrayOne, arrayTwo) => {
 }
 
 // addArrays([2,3,1,5,3,5], [3,1,76,1])
+
+const country = {
+    capital : "Warsaw",
+    population : 38,
+    president : "Duda",
+    ministers : [1,2,3]
+}
+
+console.log(country.capital)
