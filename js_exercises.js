@@ -162,4 +162,22 @@ const car = {
 // car.addCheck(2021)
 // car.showCheck()
 
+function Basket(){
+    this.products = [],
+    this.sum = 0,
+    this.addProduct = function (name, price){
+        this.products.push([name, price]);
+        this.sum += price
+    }
+    this.showBasket = function (){
+        this.products.forEach((element)=>{
+            console.log(element)
+        })
+        console.log(`Final price: ${this.sum}`)
+    }
+}
 
+const basket1 = new Basket();
+basket1.addProduct('truskawka',100);
+basket1.addProduct('banan', 400);
+basket1.showBasket()
