@@ -21,11 +21,11 @@ function  dodajZakres(minNumber, maxNumber) {
 
 function printString() {
     console.log("Java Script rulez!")
-}
+};
 
 function printString2() {
     console.log("Wygenerowano setInterval")
-}
+};
 
 // setTimeout(printString(), 2000);
 // setInterval(printString2(), 3000);
@@ -44,30 +44,40 @@ let distFromAverage = (input_table)=> {
         return Math.abs(x-table_average);
     });
     console.log(output_table)
-    return output_table
+    return output_table;
 
 }
 
 
 let ptintTable = (inputArray)=> {
     inputArray.forEach((element)=>{console.log(element)})
-}
+};
 
 
 let multiply = (inputArray)=> {
     let returnResult = 1;
     inputArray.forEach((element)=> {
-        returnResult *= element
+        returnResult *= element;
     })
-    return returnResult
+    return returnResult;
 }
 
 
 let getEvenAverage = (inputArray)=> {
-    let returnResult = inputArray.filter(element => element % 2 === 0)
-    console.log(returnResult)
+    let oddNumbers = inputArray.filter(element => element % 2 === 0)
+    if (oddNumbers.length === 0) {
+        return null;
+    }
+    let sumNumber = 0;
+    oddNumbers.forEach((element)=> {
+        sumNumber += element
+    });
+
+    return sumNumber/oddNumbers.length;
 }
 
-getEvenAverage([1,2,3,4,5,6,7])
+// console.log(getEvenAverage([2,8,3,7,4]))
+
+
 
 // dokończyć zadanie ;)
