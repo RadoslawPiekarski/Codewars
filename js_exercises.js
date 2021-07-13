@@ -181,3 +181,12 @@ function Basket(){
 // basket1.addProduct('truskawka',100);
 // basket1.addProduct('banan', 400);
 // basket1.showBasket()
+
+
+const interval = setInterval(()=>{
+    console.log("xd");
+},2000);
+
+setTimeout(()=>{
+    console.log("Elo");
+},5000);
