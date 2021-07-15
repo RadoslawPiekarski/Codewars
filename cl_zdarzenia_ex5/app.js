@@ -1,15 +1,15 @@
-let clickMeButtons = document.getElementsByClassName("btn-outline-primary")
-let counter = 0;
-
-function addCount(){
-    console.log(clickMeButtons)
-
-    let spanText = this.previousSibling;
-    console.log(this);
-    console.log(spanText);
-    spanText.innerHTML = "dupa";
+function addCount() {
+    let counter = parseInt(this.previousElementSibling.children[0].textContent);
+    counter += 1;
+    this.previousElementSibling.children[0].textContent = counter.toString();
 }
 
-for (let i=0; i<clickMeButtons.length; i++){
-clickMeButtons[i].addEventListener("click", addCount);
-}
+let button1 = document.getElementById("button1");
+button1.addEventListener("click", addCount);
+
+let button2 = document.getElementById("button2");
+button2.addEventListener("click", addCount);
+
+let button3 = document.getElementById("button3");
+button3.addEventListener("click", addCount);
+
