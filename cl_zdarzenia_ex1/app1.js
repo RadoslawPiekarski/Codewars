@@ -10,12 +10,17 @@ function hide_childern(event){
     children_element[0].style.display = "none"
 }
 
-for (let i = 0; i < elements.length; i++){
-    elements[i].addEventListener("mouseover",display_children)
-}
+elements.forEach(function (element){
+    elements.addEventListener("mouseover",display_children);
+    elements.addEventListener("mouseout",hide_childern)
+});
 
-for (let i = 0; i < elements.length; i++){
-    elements[i].addEventListener("mouseout",hide_childern)
-}
+// for (let i = 0; i < elements.length; i++){
+//     elements[i].addEventListener("mouseover",display_children)
+// }
+//
+// for (let i = 0; i < elements.length; i++){
+//     elements[i].addEventListener("mouseout",hide_childern)
+// }
 
 
