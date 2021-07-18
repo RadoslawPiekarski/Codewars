@@ -183,10 +183,28 @@ function Basket(){
 // basket1.showBasket()
 
 
-const interval = setInterval(()=>{
-    console.log("xd");
-},2000);
+// const interval = setInterval(()=>{
+//     console.log("xd");
+// },2000);
+//
+// setTimeout(()=>{
+//     console.log("Elo");
+// },5000);
 
-setTimeout(()=>{
-    console.log("Elo");
-},5000);
+
+class Veichle {
+    constructor(name) {
+        this.name = name;
+    };
+    printName() {
+        console.log(`Im a {this.name}`)
+    };
+}
+
+class Boat extends  Veichle {
+    printSwim() {
+        console.log(`${this.name} can swim`);
+    }
+}
+
+
