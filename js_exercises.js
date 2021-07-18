@@ -229,4 +229,19 @@ class WildDuck extends Duck{
     }
 }
 
+class MallardDuck extends  Duck{
+    constructor() {
+        super();
+        this.type = "mallard"
+    }
+}
+
+Duck.prototype.fly = function ()
+{
+    console.log("I'm flying...");
+}
+
+daisy = new MallardDuck()
+daisy.fly()
+
 
