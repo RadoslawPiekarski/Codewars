@@ -241,7 +241,18 @@ Duck.prototype.fly = function ()
     console.log("I'm flying...");
 }
 
-daisy = new MallardDuck()
+
+class RubberDuck extends Duck{
+    constructor() {
+        super();
+        this.type = "rubber"
+    };
+
+    fly(){
+        console.log("Rubber ducks cant fly!");
+    }
+}
+
+
+daisy = new RubberDuck()
 daisy.fly()
-
-
