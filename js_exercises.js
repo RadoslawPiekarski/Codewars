@@ -253,6 +253,12 @@ class RubberDuck extends Duck{
     }
 }
 
+//
+// daisy = new RubberDuck()
+// daisy.fly()
 
-daisy = new RubberDuck()
-daisy.fly()
+
+
+
+
+
