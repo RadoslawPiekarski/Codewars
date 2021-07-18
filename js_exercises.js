@@ -192,7 +192,7 @@ function Basket(){
 // },5000);
 
 
-class Veichle {
+class Vehicle {
     constructor(name) {
         this.name = name;
     };
@@ -201,10 +201,24 @@ class Veichle {
     };
 }
 
-class Boat extends  Veichle {
+class Boat extends  Vehicle {
     printSwim() {
         console.log(`${this.name} can swim`);
     }
 }
 
+class Duck {
+    constructor() {
+        this.type = "ordinary duck"
+    }
+    sound(){
+        console.log("Quack quack");
+    }
+    swim(){
+        console.log("I'm swiming ...");
+    }
+    print(){
+        console.log("Looks like ordinary duck")
+    }
+}
 
