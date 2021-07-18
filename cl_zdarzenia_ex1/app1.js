@@ -17,3 +17,5 @@ for (let i = 0; i < elements.length; i++){
 for (let i = 0; i < elements.length; i++){
     elements[i].addEventListener("mouseout",hide_childern)
 }
+
+
