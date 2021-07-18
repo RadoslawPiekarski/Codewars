@@ -218,7 +218,15 @@ class Duck {
         console.log("I'm swiming ...");
     }
     print(){
-        console.log("Looks like ordinary duck")
+        console.log(`Looks like ${this.type}`)
     }
 }
+
+class WildDuck extends Duck{
+    constructor() {
+        super();
+        this.type = "wildDuck";
+    }
+}
+
 
