@@ -4,5 +4,3 @@ clickMeButton.addEventListener("click", ()=>console.log("It works!"));
 
 
 
-
-
